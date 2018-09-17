@@ -1,0 +1,19 @@
+{
+  "name": "kava-popup",
+  "version": "1.0.0",
+  "description": "Custom library modal window",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fanckler/kavaPopup.git"
+  },
+  "author": "Omelchenko Sergiy s.kava1997@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fanckler/kavaPopup/issues"
+  },
+  "homepage": "https://github.com/Fanckler/kavaPopup#readme"
+}
