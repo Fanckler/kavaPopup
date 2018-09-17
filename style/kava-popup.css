@@ -1,0 +1,114 @@
+body.modal-open{
+    overflow: hidden;
+}
+#kava-popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,.7);
+}
+#kava-window{
+    position: absolute;
+    left: 50%;
+    min-width: 310px;
+    width: 400px;
+    background: transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 6px 6px 12px rgba(0,0,0,.4), -6px 3px 12px rgba(0,0,0,.4);
+}
+/* modal*/
+#kava-window .modal-window__head{
+    height: 45px;
+    display: block;
+    position: relative;
+    padding: 10px 10px 0;
+    background: rgb(51,161,229);
+}
+#kava-window .modal-window__head h3{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 45px;
+}
+#kava-window .modal-window__body{
+    /* min-height: 150px; */
+    color: #000;
+    background: #fff;
+    padding: 10px;
+}
+
+#kava-window .modal-window__footer{
+    height: 55px;
+    background: #fff;
+    padding: 0px 10px 10px;
+}
+/* button style */
+.button-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.button-close span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 90%;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
+.button-close span:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    background: #fff;
+    border-radius: 2px;
+}
+.button-close:hover {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+
+/* animation */
+#kava-window.parentfadeUp{
+    transform: translate(-50%,-100vh);
+    top: 50%;
+    transition: all .3s linear;
+}
+#kava-window.parentfadeUp.fadeUp{
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+#kava-window.parentfadeIn{
+    transform: translate(-50%,-50%);
+    top: 50%;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+#kava-window.parentfadeIn.fadeIn{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+#kava-window.parentzoom{
+    transform: translate(-50%,-50%) scale(0);
+    top: 50%;
+    transition: all .3s ease-in-out;
+}
+#kava-window.parentzoom.zoom{
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+}
