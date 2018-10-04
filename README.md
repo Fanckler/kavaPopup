@@ -26,7 +26,7 @@ $ npm install kava-popup
 or
 ```sh
     js:
-        import kavaPopup from 'kava-popup';
+        import {kavaPopup} from 'kava-popup';
     css:
         import 'node_modules/kava-popup.css';
 ```

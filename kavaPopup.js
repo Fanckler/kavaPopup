@@ -1,4 +1,4 @@
-class kavaPopup {
+export class kavaPopup {
 	//conctructor
 	constructor (settings)
 	{
